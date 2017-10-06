@@ -15,8 +15,12 @@ Options:
 
    -c, --chdir <path>      change the working directory
    --state-file <path>     set path to state file (migrations/.migrate)
+   --state-mongo <format>  name of env variable containing the mongo connection string for state storage (MONGO_CONNECTION_STRING)
    --template-file <path>  set path to template file to use for new migrations
    --date-format <format>  set a date format to use for new migration filenames
+
+NOTE: if both --state-mongo and --state-file options are specified while migrations collection is empty, the state file is migrated to the migrations collection before migration is initiated. If migrations collection contains migration state, state-file is ignored.
+This behaviour can be used for seamless switching from https://github.com/tj/node-migrate (which at the time of this fork did not support persisting of state file to mongo collection).
 
 Commands:
 
