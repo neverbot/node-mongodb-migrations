@@ -127,7 +127,7 @@ while (args.length) {
  */
 
 function log(key, msg) {
-  console.log('  \x1B[90m%s :\x1B[0m \x1B[36m%s\x1B[0m', key, msg);
+  console.log('  %s) \x1B[90m%s :\x1B[0m \x1B[36m%s\x1B[0m', dateFormat(Date.now(), 'HH:MM:ss'), key, msg);
 }
 
 /**
@@ -224,6 +224,7 @@ function performMigration(direction, migrationName) {
 }
 
 // invoke command
+log('migration', 'start');
 
 var command = options.command || 'up';
 if (!(command in commands)) abort('unknown command "' + command + '"');
