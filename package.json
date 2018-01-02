@@ -1,13 +1,16 @@
 {
-  "name": "migrate-mongodb",
+  "name": "node-mongodb-migrations",
   "version": "4.0.0",
   "description": "Abstract migration framework for node",
   "keywords": [
     "migrate",
     "migrations"
   ],
-  "author": "ikatun",
-  "repository": "git://github.com/ikatun/node-migrate.git",
+  "author": "neverbot",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neverbot/node-mongodb-migrations.git"
+  },
   "bin": {
     "migrate": "./bin/migrate"
   },
@@ -16,7 +19,7 @@
   },
   "main": "index",
   "engines": {
-    "node": ">= 0.4.x"
+    "node": ">= 8.5.x"
   },
   "scripts": {
     "test": "mocha"
@@ -25,5 +28,14 @@
   "dependencies": {
     "dateformat": "^1.0.12",
     "promised-mongo": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/neverbot/node-mongodb-migrations/issues"
+  },
+  "homepage": "https://github.com/neverbot/node-mongodb-migrations#readme",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
   }
 }
