@@ -1,7 +1,12 @@
 # node-mongodb-migrations
 
   Abstract migration framework for node.
-  Forked from [ikatun/node-migrate](https://github.com/ikatun/node-migrate), forked from [tj/node-migrate](https://github.com/tj/node-migrate).
+
+  Forked from [ikatun/node-migrate](https://github.com/ikatun/node-migrate), in turn forked from [tj/node-migrate](https://github.com/tj/node-migrate).
+
+  Can store migrations information both in a file or in a mongodb collection (useful for enviroments with multiple instanced servers).
+
+  Uses [then-mongo](https://github.com/then/then-mongo) instead of [promised-mongo](https://github.com/gordonmleigh/promised-mongo) as promised-based mongo library, so it's compatible with mdoern node versions.
 
 ## Installation
 
