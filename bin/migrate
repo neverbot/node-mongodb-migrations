@@ -2,6 +2,7 @@
 
 /* jshint laxcomma:true */
 /* jshint laxbreak:true */
+/* jshint esnext: false */
 /* jshint esversion: 6 */
 
 /**
@@ -138,10 +139,17 @@ function slugify(str) {
   return str.replace(/\s+/g, '-');
 }
 
-// create ./migrations
+// check ./migrations
 
 try {
-  fs.mkdirSync('migrations', 0o774);
+  if (!fs.existsSync('migrations')) {
+    log('error', 'migrations directory does not exist');
+
+    // create?
+    // fs.mkdirSync('migrations', 0o774);
+
+    process.exit(1);    
+  }
 } catch (err) {
   // ignore
 }
@@ -223,9 +231,9 @@ function performMigration(direction, migrationName) {
   });
 }
 
-// invoke command
 log('migration', 'start');
 
+// invoke command
 var command = options.command || 'up';
 if (!(command in commands)) abort('unknown command "' + command + '"');
 command = commands[command];

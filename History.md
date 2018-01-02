@@ -1,7 +1,11 @@
-0.5.0 / 2016-09-22
+0.5.0, 0.5.1 / 2016-09-22
 ==================
 
   * Project forked to [neverbot/node-mongodb-migrations](https://github.com/neverbot/node-mongodb-migrations)
+  * Set renamed as CoreSet to avoid name collisions
+  * jshint review
+  * Log migration times
+
 
 0.4.0 / 2016-10-06
 ==================

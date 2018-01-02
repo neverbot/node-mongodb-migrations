@@ -1,41 +1,99 @@
 {
-  "name": "node-mongodb-migrations",
-  "version": "0.5.1",
-  "description": "Abstract migration framework for node",
-  "keywords": [
-    "migrate",
-    "migrations"
+  "_from": "node-mongodb-migrations",
+  "_id": "node-mongodb-migrations@0.5.1",
+  "_inBundle": false,
+  "_integrity": "sha512-3nbaCawnWVIqL2s2hIZ61v1Lj+/bd0jgCSwMRXL/Rj24FfaVgGhnxw984c5SsFOrQATTGwD3Ya6FG0pVyePttA==",
+  "_location": "/node-mongodb-migrations",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-mongodb-migrations",
+    "name": "node-mongodb-migrations",
+    "escapedName": "node-mongodb-migrations",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
-  "author": "neverbot",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/neverbot/node-mongodb-migrations.git"
+  "_resolved": "https://registry.npmjs.org/node-mongodb-migrations/-/node-mongodb-migrations-0.5.1.tgz",
+  "_shasum": "c64d479d11f93104de83b88750cf45deabaef2d5",
+  "_spec": "node-mongodb-migrations",
+  "_where": "/var/www/capi",
+  "author": {
+    "name": "neverbot"
   },
   "bin": {
     "migrate": "./bin/migrate"
   },
-  "devDependencies": {
-    "mocha": "^2.2.1"
+  "bugs": {
+    "url": "https://github.com/neverbot/node-mongodb-migrations/issues"
   },
-  "main": "index",
-  "engines": {
-    "node": ">= 8.5.x"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "license": "MIT",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Iván Alonso",
+      "email": "ivan@neverbot.com"
+    },
+    {
+      "name": "ikatun",
+      "email": "ikatun@gmail.com"
+    },
+    {
+      "name": "TJ Holowaychuk",
+      "email": "tj@apex.sh"
+    }
+  ],
   "dependencies": {
     "dateformat": "^1.0.12",
     "promised-mongo": "*"
   },
-  "bugs": {
-    "url": "https://github.com/neverbot/node-mongodb-migrations/issues"
+  "deprecated": false,
+  "description": "Abstract migration framework for node",
+  "devDependencies": {
+    "mocha": "^2.2.1"
   },
-  "homepage": "https://github.com/neverbot/node-mongodb-migrations#readme",
   "directories": {
     "example": "examples",
     "lib": "lib",
     "test": "test"
-  }
+  },
+  "engines": {
+    "node": ">= 8.5.x"
+  },
+  "homepage": "https://github.com/neverbot/node-mongodb-migrations#readme",
+  "keywords": [
+    "migrate",
+    "migrations"
+  ],
+  "license": "MIT",
+  "main": "index",
+  "name": "node-mongodb-migrations",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neverbot/node-mongodb-migrations.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "0.5.1",
+  "warnings": [
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 8.5.x"
+      },
+      "pkgid": "node-mongodb-migrations@0.5.1"
+    },
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": ">= 8.5.x"
+      },
+      "pkgid": "node-mongodb-migrations@0.5.1"
+    }
+  ]
 }
