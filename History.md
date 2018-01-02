@@ -1,3 +1,8 @@
+0.6.0 / 2016-09-22
+==================
+
+  * Mongo library changed from [promised-mongo](https://github.com/gordonmleigh/promised-mongo) to [then-mongo](https://github.com/then/then-mongo)
+
 0.5.0, 0.5.1 / 2016-09-22
 ==================
 

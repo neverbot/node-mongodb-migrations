@@ -1,10 +1,10 @@
 
-// bad example, but you get the point ;)
+/* whatever configuration you need to get 
+    your connection url */
 
-// $ npm install redis
-// $ redis-server
+// let config = new Config();
 
-var redis = require('redis')
-  , db = redis.createClient();
+var mongo = require('then-mongo');
+var database = mongo(config.mongo.path);
 
-module.exports = db;
+module.exports = database;
