@@ -34,7 +34,7 @@ Commands:
 ## Programmatic usage
 
 ```javascript
-var migrate = require('migrate');
+var migrate = require('node-mongodb-migrations');
 var set = migrate.load('migration/.migrate', 'migration');
 
 set.up(function (err) {
@@ -46,7 +46,7 @@ set.up(function (err) {
 
 ## Creating Migrations
 
-To create a migration, execute `migrate create` with an optional title. `node-migrate` will create a node module within `./migrations/` which contains the following two exports:
+To create a migration, execute `migrate create` with an optional title. `node-mongodb-migrationse` will create a node module within `./migrations/` which contains the following two exports:
 
     exports.up = function(next){
       next();
@@ -104,7 +104,7 @@ When first running the migrations, all will be executed in sequence.
     up : migrations/1316027433425-coolest-pet.js
     migration : complete
 
-Subsequent attempts will simply output "complete", as they have already been executed in this machine. `node-migrate` knows this because it stores the current state in `./migrations/.migrate` which is typically a file that SCMs like GIT should ignore.
+Subsequent attempts will simply output "complete", as they have already been executed in this machine. `node-mongodb-migrations` knows this because it stores the current state in `./migrations/.migrate` which is typically a file that SCMs like GIT should ignore.
 
     $ migrate
     migration : complete
