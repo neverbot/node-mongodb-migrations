@@ -1,3 +1,24 @@
+0.5.0 / 2016-09-22
+==================
+
+  * Project forked to [neverbot/node-mongodb-migrations](https://github.com/neverbot/node-mongodb-migrations)
+
+0.4.0 / 2016-10-06
+==================
+
+  * Add a comment about state-mongo usage
+
+0.3.1 / 2016-09-25
+==================
+
+  * Allow sync between migration file and migration collection
+
+0.3.0 / 2016-09-22
+==================
+
+  * Project forked to [ikatun/node-migrate](https://github.com/ikatun/node-migrate)
+  * Add `--state-db` option to persist changes to DB instead of file
+
 0.2.3 / 2016-07-05
 ==================
 
