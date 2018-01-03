@@ -1,7 +1,8 @@
-0.7.0, 0.7.1 / 2018-01-03
+0.7.0 - 0.7.2 / 2018-01-03
 ==================
 
   * Add `rollback` command to migrate down just the last applied migration
+  * Better logs in migrations
 
 0.6.0 - 0.6.3 / 2018-01-02
 ==================
