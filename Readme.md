@@ -54,6 +54,7 @@ set.up(function (err) {
 
 To create a migration, execute `migrate create` with an optional title. `node-mongodb-migrationse` will create a node module within `./migrations/` which contains the following two exports:
 
+```javascript
     exports.up = function(next){
       next();
     };
@@ -61,7 +62,7 @@ To create a migration, execute `migrate create` with an optional title. `node-mo
     exports.down = function(next){
       next();
     };
-
+```
 All you have to do is populate these, invoking `next()` when complete, and you are ready to migrate!
 
 For example:
@@ -71,6 +72,7 @@ For example:
 
 The first call creates `./migrations/{timestamp in milliseconds}-add-pets.js`, which we can populate:
 
+```javascript
       var db = require('./db');
 
       exports.up = function(next){
@@ -84,9 +86,11 @@ The first call creates `./migrations/{timestamp in milliseconds}-add-pets.js`, w
         db.rpop('pets');
         db.rpop('pets', next);
       };
+```
 
 The second creates `./migrations/{timestamp in milliseconds}-add-owners.js`, which we can populate:
 
+```javascript
       var db = require('./db');
 
       exports.up = function(next){
@@ -98,6 +102,7 @@ The second creates `./migrations/{timestamp in milliseconds}-add-owners.js`, whi
         db.rpop('owners');
         db.rpop('owners', next);
       };
+```
 
 ## Running Migrations
 
