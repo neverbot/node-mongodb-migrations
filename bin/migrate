@@ -50,6 +50,7 @@ var usage = [
   , '  Commands:'
   , ''
   , '     down   [name]    migrate down till given migration'
+  , '     rollback         migrate down the last applied migration'
   , '     up     [name]    migrate up till given migration (the default command)'
   , '     create [title]   create a new migration file with optional [title]'
   , ''
@@ -62,11 +63,15 @@ var usage = [
 var template = [
     '\'use strict\''
   , ''
+  , 'var db = require(\'./db\');'
+  , ''
   , 'exports.up = function(next) {'
+  , '  console.log(\'migration up description\');'
   , '  next();'
   , '};'
   , ''
   , 'exports.down = function(next) {'
+  , '  console.log(\'migration down description\');'
   , '  next();'
   , '};'
   , ''
@@ -172,6 +177,30 @@ var commands = {
 
   down: function(migrationName){
     performMigration('down', migrationName);
+  },
+
+  /**
+   * rollback
+   */
+
+  rollback: function(){
+    var type = options.stateMongo ? 'mongo' : 'file';
+    var state = options.stateMongo || options.stateFile || join('migrations', '.migrate');
+    var set = migrate.load(state, 'migrations', type, options.stateFile);
+    
+    var self = set;
+    set.load(function(err, obj){
+      if (err)
+        return;
+
+      self.pos = obj.pos ? obj.pos : 0;
+      
+      if (self.pos > 0)
+        return performMigration('down', self.migrations[self.pos - 1].title);
+
+      log('rollback', 'complete');
+      process.exit(0);
+    });
   },
 
   /**

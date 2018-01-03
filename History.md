@@ -1,16 +1,20 @@
-0.6.0 - 0.6.3 / 2016-09-22
+0.7.0 / 2018-01-03
+==================
+
+  * Add `rollback` command to migrate down just the last applied migration
+
+0.6.0 - 0.6.3 / 2018-01-02
 ==================
 
   * Mongo library changed from [promised-mongo](https://github.com/gordonmleigh/promised-mongo) to [then-mongo](https://github.com/then/then-mongo)
 
-0.5.0, 0.5.1 / 2016-09-22
+0.5.0, 0.5.1 / 2018-01-02
 ==================
 
   * Project forked to [neverbot/node-mongodb-migrations](https://github.com/neverbot/node-mongodb-migrations)
   * Set renamed as CoreSet to avoid name collisions
   * jshint review
   * Log migration times
-
 
 0.4.0 / 2016-10-06
 ==================
