@@ -21,7 +21,7 @@ Options:
 
    -c, --chdir <path>      change the working directory
    --state-file <path>     set path to state file (migrations/.migrate)
-   --state-mongo <format>  name of env variable containing the mongo connection string for state storage (MONGO_CONNECTION_STRING)
+   --state-mongo <format>  name of env variable containing the mongo connection string
    --template-file <path>  set path to template file to use for new migrations
    --date-format <format>  set a date format to use for new migration filenames
 
@@ -31,6 +31,7 @@ This behaviour can be used for seamless switching from https://github.com/tj/nod
 Commands:
 
    down   [name]    migrate down till given migration
+   rollback         migrate down the last applied migration
    up     [name]    migrate up till given migration (the default command)
    create [title]   create a new migration file with optional [title]
 

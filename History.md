@@ -1,4 +1,4 @@
-0.7.0 / 2018-01-03
+0.7.0, 0.7.1 / 2018-01-03
 ==================
 
   * Add `rollback` command to migrate down just the last applied migration
