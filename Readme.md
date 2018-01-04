@@ -6,7 +6,7 @@
 
   Can store migrations information both in a file or in a mongodb collection (useful for enviroments with multiple instanced servers).
 
-  Uses [then-mongo](https://github.com/then/then-mongo) instead of [promised-mongo](https://github.com/gordonmleigh/promised-mongo) as promised-based mongo library, so it's compatible with mdoern node versions.
+  Uses [then-mongo](https://github.com/then/then-mongo) instead of [promised-mongo](https://github.com/gordonmleigh/promised-mongo) as promised-based mongo library, so it's compatible with modern node versions.
 
 ## Installation
 
