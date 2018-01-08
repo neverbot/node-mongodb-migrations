@@ -1,8 +1,8 @@
 {
   "_from": "node-mongodb-migrations",
-  "_id": "node-mongodb-migrations@0.5.1",
+  "_id": "node-mongodb-migrations@0.7.2",
   "_inBundle": false,
-  "_integrity": "sha512-3nbaCawnWVIqL2s2hIZ61v1Lj+/bd0jgCSwMRXL/Rj24FfaVgGhnxw984c5SsFOrQATTGwD3Ya6FG0pVyePttA==",
+  "_integrity": "sha512-aCxJ+h5j+3OkZpdAmUZjxHuI+y5RIbREg1Xi+dHbhywFyLhj8ZZ4QBb0Dj/tLyHhEm1z4qEEAldgz9Pvwyn1NA==",
   "_location": "/node-mongodb-migrations",
   "_phantomChildren": {},
   "_requested": {
@@ -19,8 +19,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/node-mongodb-migrations/-/node-mongodb-migrations-0.5.1.tgz",
-  "_shasum": "c64d479d11f93104de83b88750cf45deabaef2d5",
+  "_resolved": "https://registry.npmjs.org/node-mongodb-migrations/-/node-mongodb-migrations-0.7.2.tgz",
+  "_shasum": "1f20b576007ae1261d4341300371527f55117a67",
   "_spec": "node-mongodb-migrations",
   "_where": "/var/www/capi",
   "author": {
@@ -49,7 +49,7 @@
   ],
   "dependencies": {
     "dateformat": "^1.0.12",
-    "then-mongo": "^3.0.2"
+    "mongodb": "2.2.33"
   },
   "deprecated": false,
   "description": "Abstract migration framework for node",
@@ -79,21 +79,21 @@
   "scripts": {
     "test": "mocha"
   },
-  "version": "0.7.4",
+  "version": "0.8.0",
   "warnings": [
     {
       "code": "ENOTSUP",
       "required": {
         "node": ">= 8.5.x"
       },
-      "pkgid": "node-mongodb-migrations@0.5.1"
+      "pkgid": "node-mongodb-migrations@0.7.2"
     },
     {
       "code": "ENOTSUP",
       "required": {
         "node": ">= 8.5.x"
       },
-      "pkgid": "node-mongodb-migrations@0.5.1"
+      "pkgid": "node-mongodb-migrations@0.7.2"
     }
   ]
 }

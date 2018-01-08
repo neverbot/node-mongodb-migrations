@@ -1,4 +1,9 @@
-0.7.0 - 0.7.2 / 2018-01-03
+0.8.0 / 2018-01-08
+==================
+
+  * Stop using mondogb promise libraries and use the native mongodb promises
+
+0.7.0 - 0.7.3 / 2018-01-03
 ==================
 
   * Add `rollback` command to migrate down just the last applied migration
