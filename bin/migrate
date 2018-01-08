@@ -62,7 +62,7 @@ var usage = [
  */
 
 var template = [
-    '\'use strict\''
+    '\'use strict\';'
   , ''
   , 'var db = require(\'./db\');'
   , 'var log = require(\'./log\');'
