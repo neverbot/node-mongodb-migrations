@@ -1,9 +1,9 @@
 # node-mongodb-migrations
 
-![downloads](https://img.shields.io/npm/dt/node-mongodb-migrations.svg)
-![weekly](https://img.shields.io/npm/dw/node-mongodb-migrations.svg)
-![license](https://img.shields.io/github/license/neverbot/node-mongodb-migrations.svg)
-![semver](https://img.shields.io/npm/v/node-mongodb-migrations)
+![npm](https://img.shields.io/npm/dt/node-mongodb-migrations)
+![npm](https://img.shields.io/npm/dw/node-mongodb-migrations)
+[![GitHub license](https://img.shields.io/github/license/neverbot/node-mongodb-migrations)](https://github.com/neverbot/node-mongodb-migrations/blob/master/LICENSE.md)
+![npm](https://img.shields.io/npm/v/node-mongodb-migrations)
 
   Abstract migration framework for node.
 
