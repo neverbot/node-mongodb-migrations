@@ -25,7 +25,7 @@
   ],
   "dependencies": {
     "dateformat": "^1.0.12",
-    "mongodb": "2.2.33"
+    "mongodb": "3.6.1"
   },
   "deprecated": false,
   "description": "Abstract migration framework for node",
